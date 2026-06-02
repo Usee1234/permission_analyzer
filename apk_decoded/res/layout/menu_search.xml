@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:id="@id/top_app_bar_layout" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_marginStart="@dimen/activity_margin" android:layout_marginEnd="@dimen/activity_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/top_toolbar_holder" android:background="@drawable/search_menu_background" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/medium_margin" android:layout_marginBottom="@dimen/medium_margin">
+        <ImageView android:id="@id/top_toolbar_search_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_search_vector" android:layout_centerVertical="true" android:contentDescription="@string/search" android:paddingStart="@dimen/activity_margin" />
+        <EditText android:textSize="@dimen/big_text_size" android:ellipsize="end" android:gravity="start|center" android:id="@id/top_toolbar_search" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/search" android:maxLines="1" android:lines="1" android:singleLine="true" android:layout_centerVertical="true" android:paddingStart="@dimen/activity_margin" android:layout_toStartOf="@id/top_toolbar" android:layout_toEndOf="@id/top_toolbar_search_icon" />
+        <com.google.android.material.appbar.MaterialToolbar android:id="@id/top_toolbar" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="@dimen/small_margin" android:layout_alignParentEnd="true" app:titleTextAppearance="@style/AppTheme.ActionBar.TitleTextStyle" />
+    </RelativeLayout>
+</com.google.android.material.appbar.AppBarLayout>

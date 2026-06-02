@@ -1,0 +1,35 @@
+{
+  "app_name": "com.simplemobiletools.flashlight_66",
+  "apk_path": "C:\\Users\\mathu\\permission_analyzer\\apks\\normal_apps\\com.simplemobiletools.flashlight_66.apk",
+  "actual_permissions": [
+    "CAMERA",
+    "FLASHLIGHT",
+    "SCHEDULE_EXACT_ALARM"
+  ],
+  "expected_permissions": [
+    "CAMERA",
+    "FLASHLIGHT",
+    "USE_EXACT_ALARM"
+  ],
+  "unexpected_permissions": [],
+  "missing_permissions": [],
+  "flag_excessive_permissions": false,
+  "llm_verdict": "not_vulnerable",
+  "llm_flagged": false,
+  "final_flagged": false,
+  "llm_opinion": null,
+  "llm_response": {
+    "expected_permission": [
+      "PERM1",
+      "PERM2"
+    ],
+    "reasoning": {
+      "PERM1": "Brief reason for permission"
+    },
+    "confidence": 0.8,
+    "verdict": "not_vulnerable",
+    "flagged": false,
+    "opiniion": "In my opinion, this app is safe.",
+    "fallback": "profile_permissions"
+  }
+}

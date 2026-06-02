@@ -1,0 +1,15 @@
+{
+    "app_name": "com.simplemobiletools.flashlight_66",
+    "apk_path": "C:\\Users\\mathu\\permission_analyzer\\apks\\normal_apps\\com.simplemobiletools.flashlight_66.apk",
+    "permissions": [
+        "CAMERA",
+        "FLASHLIGHT",
+        "SCHEDULE_EXACT_ALARM"
+    ]
+,
+    "app_name": "bored.codebyk.mintcalc_111",
+    "apk_path": "C:\\Users\\mathu\\permission_analyzer\\apks\\normal_apps\\bored.codebyk.mintcalc_111.apk",
+    "permissions": [
+        "VIBRATE"
+    ]
+}

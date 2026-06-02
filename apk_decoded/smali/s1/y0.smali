@@ -1,0 +1,11 @@
+.class public interface abstract Ls1/y0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ls1/i;
+
+
+# virtual methods
+.method public abstract i0()V
+.end method

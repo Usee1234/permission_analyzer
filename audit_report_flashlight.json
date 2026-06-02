@@ -1,0 +1,32 @@
+{
+  "app_name": "com.simplemobiletools.flashlight_66",
+  "apk_path": "apks\\normal_apps\\com.simplemobiletools.flashlight_66.apk",
+  "actual_permissions": [
+    "CAMERA",
+    "FLASHLIGHT",
+    "SCHEDULE_EXACT_ALARM"
+  ],
+  "expected_permissions": [
+    "CAMERA",
+    "FLASHLIGHT",
+    "USE_EXACT_ALARM"
+  ],
+  "unexpected_permissions": [],
+  "missing_permissions": [],
+  "flag_excessive_permissions": false,
+  "llm_response": {
+    "note": "LLM skipped; expected permissions inferred from profile or top similarity hits.",
+    "profile_permissions": [
+      "FLASHLIGHT",
+      "CAMERA",
+      "USE_EXACT_ALARM"
+    ],
+    "permission_hits": [
+      "FLASHLIGHT",
+      "USE_EXACT_ALARM",
+      "CAMERA_PRIVACY_ALLOWLIST",
+      "USE_FULL_SCREEN_INTENT",
+      "LAUNCH_PERMISSION_SETTINGS"
+    ]
+  }
+}

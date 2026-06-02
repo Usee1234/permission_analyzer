@@ -1,0 +1,15 @@
+requests
+lxml
+chromadb
+sentence-transformers
+transformers
+torch
+ollama
+beautifulsoup4
+selenium
+langchain
+webdriver-manager
+numpy
+pandas
+scikit-learn
+openai

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:installLocation="auto" package="com.simplemobiletools.flashlight" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:maxSdkVersion="23" android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="true"/>
+    <queries>
+        <package android:name="com.simplemobiletools.thankyou.debug"/>
+        <package android:name="com.simplemobiletools.thankyou"/>
+    </queries>
+    <uses-feature android:name="android.hardware.faketouch" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false"/>
+    <permission android:name="com.simplemobiletools.flashlight.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_launcher_name" android:localeConfig="@xml/locale_config" android:name="com.simplemobiletools.flashlight.App" android:roundIcon="@mipmap/ic_launcher" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:exported="true" android:name="com.simplemobiletools.flashlight.activities.SplashActivity" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_grey_black" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Grey_black" android:roundIcon="@mipmap/ic_launcher_grey_black" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_blue_grey" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Blue_grey" android:roundIcon="@mipmap/ic_launcher_blue_grey" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_brown" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Brown" android:roundIcon="@mipmap/ic_launcher_brown" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_deep_orange" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Deep_orange" android:roundIcon="@mipmap/ic_launcher_deep_orange" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="true" android:exported="true" android:icon="@mipmap/ic_launcher" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Orange" android:roundIcon="@mipmap/ic_launcher" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_amber" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Amber" android:roundIcon="@mipmap/ic_launcher_amber" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_yellow" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Yellow" android:roundIcon="@mipmap/ic_launcher_yellow" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_lime" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Lime" android:roundIcon="@mipmap/ic_launcher_lime" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_light_green" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Light_green" android:roundIcon="@mipmap/ic_launcher_light_green" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_green" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Green" android:roundIcon="@mipmap/ic_launcher_green" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_teal" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Teal" android:roundIcon="@mipmap/ic_launcher_teal" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_cyan" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Cyan" android:roundIcon="@mipmap/ic_launcher_cyan" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_light_blue" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Light_blue" android:roundIcon="@mipmap/ic_launcher_light_blue" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_blue" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Blue" android:roundIcon="@mipmap/ic_launcher_blue" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_indigo" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Indigo" android:roundIcon="@mipmap/ic_launcher_indigo" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_deep_purple" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Deep_purple" android:roundIcon="@mipmap/ic_launcher_deep_purple" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_purple" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Purple" android:roundIcon="@mipmap/ic_launcher_purple" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_pink" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Pink" android:roundIcon="@mipmap/ic_launcher_pink" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_red" android:name="com.simplemobiletools.flashlight.activities.SplashActivity.Red" android:roundIcon="@mipmap/ic_launcher_red" android:targetActivity="com.simplemobiletools.flashlight.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="com.simplemobiletools.flashlight.activities.MainActivity" android:theme="@style/AppTheme"/>
+        <activity android:exported="true" android:name="com.simplemobiletools.flashlight.activities.WidgetTorchConfigureActivity" android:screenOrientation="portrait" android:theme="@style/MyWidgetConfigTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.simplemobiletools.flashlight.activities.WidgetBrightDisplayConfigureActivity" android:screenOrientation="portrait" android:theme="@style/MyWidgetConfigTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/bright_display" android:launchMode="singleInstance" android:name="com.simplemobiletools.flashlight.activities.BrightDisplayActivity" android:theme="@style/FullScreenTheme"/>
+        <activity android:exported="true" android:label="@string/settings" android:name="com.simplemobiletools.flashlight.activities.SettingsActivity" android:parentActivityName="com.simplemobiletools.flashlight.activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.APPLICATION_PREFERENCES"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/about" android:name="com.simplemobiletools.commons.activities.AboutActivity" android:parentActivityName="com.simplemobiletools.flashlight.activities.MainActivity"/>
+        <activity android:configChanges="orientation" android:exported="false" android:label="@string/third_party_licences" android:name="com.simplemobiletools.commons.activities.LicenseActivity" android:parentActivityName="com.simplemobiletools.commons.activities.AboutActivity"/>
+        <activity android:exported="false" android:label="@string/customize_colors" android:name="com.simplemobiletools.commons.activities.CustomizationActivity" android:parentActivityName="com.simplemobiletools.flashlight.activities.SettingsActivity"/>
+        <activity android:configChanges="orientation" android:exported="false" android:label="@string/frequently_asked_questions" android:name="com.simplemobiletools.commons.activities.FAQActivity" android:parentActivityName="com.simplemobiletools.commons.activities.AboutActivity"/>
+        <receiver android:exported="true" android:icon="@drawable/ic_flashlight_vector" android:label="@string/app_launcher_name" android:name="com.simplemobiletools.flashlight.helpers.MyWidgetTorchProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_torch"/>
+        </receiver>
+        <receiver android:exported="true" android:icon="@drawable/ic_bright_display_vector" android:label="@string/bright_display" android:name="com.simplemobiletools.flashlight.helpers.MyWidgetBrightDisplayProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_bright_display"/>
+        </receiver>
+        <receiver android:exported="false" android:name="com.simplemobiletools.flashlight.helpers.ShutDownReceiver"/>
+        <service android:exported="true" android:icon="@drawable/img_torch_widget_preview" android:label="@string/app_launcher_name" android:name="com.simplemobiletools.flashlight.helpers.FlashlightTileService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:icon="@drawable/img_bright_display_widget_preview" android:label="@string/bright_display" android:name="com.simplemobiletools.flashlight.helpers.BrightDisplayTileService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="orientation" android:exported="false" android:label="@string/contributors" android:name="com.simplemobiletools.commons.activities.ContributorsActivity" android:parentActivityName="com.simplemobiletools.commons.activities.AboutActivity"/>
+        <activity android:configChanges="orientation" android:enableOnBackInvokedCallback="true" android:exported="false" android:label="@string/manage_blocked_numbers" android:name="com.simplemobiletools.commons.activities.ManageBlockedNumbersActivity"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.simplemobiletools.commons.receivers.SharedThemeReceiver">
+            <intent-filter>
+                <action android:name="com.simplemobiletools.commons.SHARED_THEME_ACTIVATED"/>
+                <action android:name="com.simplemobiletools.commons.SHARED_THEME_UPDATED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.simplemobiletools.flashlight.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

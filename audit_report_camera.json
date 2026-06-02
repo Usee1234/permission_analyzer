@@ -1,0 +1,33 @@
+{
+  "app_name": "bored.codebyk.mintcalc_111",
+  "apk_path": "C:\\Users\\mathu\\permission_analyzer\\apks\\normal_apps\\bored.codebyk.mintcalc_111.apk",
+  "actual_permissions": [
+    "VIBRATE"
+  ],
+  "expected_permissions": [
+    "START_VIBRATION_SESSIONS",
+    "VIBRATE",
+    "VIBRATE_ALWAYS_ON",
+    "VIBRATE_SYSTEM_CONSTANTS",
+    "VIBRATE_VENDOR_EFFECTS"
+  ],
+  "unexpected_permissions": [],
+  "missing_permissions": [
+    "START_VIBRATION_SESSIONS",
+    "VIBRATE_ALWAYS_ON",
+    "VIBRATE_SYSTEM_CONSTANTS",
+    "VIBRATE_VENDOR_EFFECTS"
+  ],
+  "flag_excessive_permissions": false,
+  "llm_response": {
+    "note": "LLM skipped; expected permissions inferred from profile or top similarity hits.",
+    "profile_permissions": [],
+    "permission_hits": [
+      "START_VIBRATION_SESSIONS",
+      "VIBRATE_SYSTEM_CONSTANTS",
+      "VIBRATE",
+      "VIBRATE_VENDOR_EFFECTS",
+      "VIBRATE_ALWAYS_ON"
+    ]
+  }
+}

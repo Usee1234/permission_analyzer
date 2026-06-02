@@ -1,0 +1,33 @@
+.class public abstract Lq1/h;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final a:Lr1/i;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    sget-object v0, Lq1/g;->m:Lq1/g;
+
+    .line 2
+    .line 3
+    new-instance v1, Lr1/i;
+
+    .line 4
+    .line 5
+    invoke-direct {v1, v0}, Lr1/i;-><init>(Le9/a;)V
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v1, Lq1/h;->a:Lr1/i;
+
+    .line 9
+    .line 10
+    return-void
+.end method
