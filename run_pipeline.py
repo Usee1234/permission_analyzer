@@ -173,6 +173,15 @@ def run(apk_path: Path, persist_dir: Path, model: str, top_k: int, output_path: 
             parsed = parse_json_response(llm_output)
             expected_permissions = parsed.get('expected_permissions', [])
             llm_response = parsed
+
+            # Merge profile-inferred permissions with LLM results so we don't
+            # miss obvious expected perms (e.g., CAMERA when FLASHLIGHT is present).
+            if profile_permissions:
+                seen = set(p.upper() for p in expected_permissions)
+                for p in profile_permissions:
+                    if p.upper() not in seen:
+                        expected_permissions.append(p)
+                        seen.add(p.upper())
         except ValueError as exc:
             expected_permissions = profile_permissions or infer_expected_permissions_by_similarity(permission_hits)
             llm_response = {
