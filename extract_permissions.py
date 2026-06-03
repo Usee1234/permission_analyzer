@@ -68,7 +68,7 @@ def save_permissions_data(apk_path, permissions):
 
 if __name__ == "__main__":
 
-    my_apk = r""
+    my_apk = r"apks/normal_apps/com.simplemobiletools.flashlight_66.apk"
 
     print(f"Analyzing: {my_apk}")
 

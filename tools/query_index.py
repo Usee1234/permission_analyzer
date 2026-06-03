@@ -13,7 +13,8 @@ def load_embedding_model(name: str = 'all-MiniLM-L6-v2') -> SentenceTransformer:
 def load_chroma_client(persist_dir: Path) -> chromadb.Client:
     return chromadb.PersistentClient(path=str(persist_dir))
 
-
+# This function searches the Chroma vector index for the most relevant permission and app examples.
+# also vectors embedding are made here for the query text
 def search_collection(client: chromadb.Client, collection_name: str, query_text: str, top_k: int) -> List[Dict[str, Any]]:
     collection = client.get_collection(collection_name)
     results = collection.query(query_texts=[query_text], n_results=top_k)

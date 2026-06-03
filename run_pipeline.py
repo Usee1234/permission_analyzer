@@ -24,19 +24,47 @@ def canonicalize_permissions(names: List[str]) -> List[str]:
     return [canonicalize_permission_name(name) for name in names if name and name.strip()]
 
 
+def format_retrieval_context(permission_hits: List[Dict], app_hits: List[Dict], max_hits: int = 3) -> str:
+    lines: List[str] = ['Retrieved context from the permission reference database and similar app examples:']
+
+    if permission_hits:
+        lines.append('Permission guidance:')
+        for hit in permission_hits[:max_hits]:
+            permission_id = hit.get('id', '<unknown>')
+            document = hit.get('document', '') or hit.get('metadata', {}).get('description', '')
+            lines.append(f'- Permission reference: {permission_id}')
+            if document:
+                lines.append(f'  {document.strip().replace("\n", " ")[:500]}')
+    else:
+        lines.append('- No permission reference hits were retrieved.')
+
+    if app_hits:
+        lines.append('Similar app examples:')
+        for hit in app_hits[:max_hits]:
+            app_title = hit.get('metadata', {}).get('app_name') or hit.get('id', '<unknown>')
+            document = hit.get('document', '')
+            lines.append(f'- App example: {app_title}')
+            if document:
+                lines.append(f'  {document.strip().replace("\n", " ")[:500]}')
+    else:
+        lines.append('- No similar app examples were retrieved.')
+
+    return '\n'.join(lines)
+
+
 def build_prompt(actual_permissions: List[str], app_name: str, permission_hits: List[Dict], app_hits: List[Dict], app_intent: str = '') -> str:
     lines = [
         'You are a permission audit assistant. Return ONLY valid JSON, nothing else.',
+        'Use the retrieved context below together with the APK name and permissions to determine expected permissions, reasoning, confidence, and vulnerability.',
         f'App: {app_name}',
         f'Permissions: {", ".join(actual_permissions[:5])}',
     ]
 
     if app_intent:
-        lines.append(f'Context: {app_intent}')
+        lines.append(f'App hint: {app_intent}')
 
+    lines.extend(['', format_retrieval_context(permission_hits, app_hits), '', 'Respond with this JSON structure only:'])
     lines.extend([
-        '',
-        'Respond with this JSON structure only:',
         '{',
         '  "expected_permissions": ["PERM1", "PERM2"],',
         '  "reasoning": {"PERM1": "brief reason"},',
@@ -58,7 +86,10 @@ def create_audit_report(app_name: str, apk_path: str, actual_permissions: List[s
     vulnerable_flag = bool(unexpected)
     llm_verdict = llm_response.get('verdict') if isinstance(llm_response, dict) else None
     llm_flagged = llm_response.get('flagged') if isinstance(llm_response, dict) else None
-    final_flagged = vulnerable_flag or bool(llm_flagged) or (llm_verdict == 'vulnerable')
+    if llm_flagged is not None:
+        final_flagged = bool(llm_flagged) or (llm_verdict == 'vulnerable')
+    else:
+        final_flagged = vulnerable_flag or (llm_verdict == 'vulnerable')
     return {
         'app_name': app_name,
         'apk_path': str(apk_path),
