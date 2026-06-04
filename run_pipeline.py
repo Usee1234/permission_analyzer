@@ -23,7 +23,7 @@ def canonicalize_permission_name(name: str) -> str:
 def canonicalize_permissions(names: List[str]) -> List[str]:
     return [canonicalize_permission_name(name) for name in names if name and name.strip()]
 
-
+# // This is a feature of my project for giving accurate permision refernce to llm through this i am givig the context of adnroid permission reference and similar app examples to llm so that it can give more accurate result.
 def format_retrieval_context(permission_hits: List[Dict], app_hits: List[Dict], max_hits: int = 3) -> str:
     lines: List[str] = ['Retrieved context from the permission reference database and similar app examples:']
 

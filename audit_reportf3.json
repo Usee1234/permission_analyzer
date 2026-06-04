@@ -17,7 +17,7 @@
   "flag_excessive_permissions": true,
   "llm_verdict": "not_vulnerable",
   "llm_flagged": false,
-  "final_flagged": true,
+  "final_flagged": false,
   "llm_opinion": "In my opinion, this app is safe as it only requests permissions necessary for its functionality and does not appear to misuse them.",
   "llm_response": {
     "expected_permissions": [
