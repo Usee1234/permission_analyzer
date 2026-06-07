@@ -2259,5 +2259,320 @@
       "RECEIVE DATA FROM INTERNET"
     ],
     "source": "apps_dataset"
+  },
+  {
+    "app_id": "all.in.one.calculator",
+    "app_name": "All-In-One Calculator",
+    "category": "Productivity",
+    "description": "The original All-In-One Calculator for Android It's a FREE, complete and easy to use multi calculator & converter. What does it do? Designed with simplicity in mind, it helps you solve everyday problems. From simple or complex calculations, to unit and currency conversions, percentages, proportions, areas, volumes, etc... it does it all. And it does it good! This is the PERFECT Calculator Passionate development combined with constant feedback we receive from our users resulted in that we think is the best multi calculator on the store. Featuring over 75 FREE Calculators and Unit Converters packed in with a Scientific Calculator, it's the only calculator you will need from now on on your device. Oh, and did we say it is completely FREE? Yes, it is free. We think everyone should enjoy this. If you are a student, teacher, engineer, handyman, contractor or just somebody who struggles with math & conversions, you really should give this one a try. • Use it for simple or complex calculations • Convert units or currencies in the same app • Enjoy easier homework or school assignments So, on with the features... MAIN CALCULATOR • Clear design with big buttons • Multiple calculator layouts • Editable input & cursor • Copy & paste support • Scientific functions • Fraction calculator • Calculation history • Memory buttons • Home widget 75 CALCULATORS & CONVERTERS • Algebra, Geometry, Unit Converters, Finance, Health, Date & time • Currency converter with 160 currencies (available offline) • Instant results delivered as you type • Smart search for faster navigation Algebra • Percentage calculator • Proportion calculator • Ratio calculator • Average calculator - arithmetic, geometric and harmonic means • Equation solver - linear, quadratic and equation system • Greatest common factor & Lowest common multiple calculator • Combinations and permutations • Decimal to fraction • Fraction simplifier • Prime number checker • Random number generator Geometry • Shape calculators for square, rectangle, parallelogram, trapezoid, rhombus, triangle, pentagon, hexagon, circle, circle arc, ellipse • Body calculators for cube, rect. prism, square pyramid, sq. pyramid frustum, cylinder, cone, conical frustum, sphere, spherical cap, spherical frustum, ellipsoid Unit converters • Acceleration converter • Angle converter • Length converter • Energy converter • Force converter • Torque converter • Area converter • Volume converter • Volumetric flow converter • Weight converter • Temperature converter • Pressure converter • Power converter • Speed converter • Mileage converter • Time converter • Digital storage converter • Data transfer speed converter • Numeric base converter • Roman numerals converter • Shoe size converter • Ring size converter • Cooking converter Finance • Currency converter with 160 currencies available offline • Unit price calculator • Sales tax calculator • Tip calculator • Loan calculator • Simple / Compound interest calculator Health • Body mass index - BMI • Daily calories burn • Body fat percentage Date & time • Age calculator • Add & subtract - Add or subtract years, months, days, hours and minutes from a date • Time interval - Calculate the difference in time between two dates Miscellaneous • Mileage calculator • Ohm's law calculator - voltage, current, resistance and power Developed in Transylvania 🇷🇴",
+    "permissions": [
+      "GOOGLE PLAY LICENSE CHECK",
+      "CONTROL VIBRATION",
+      "FULL NETWORK ACCESS",
+      "PREVENT DEVICE FROM SLEEPING",
+      "READ GOOGLE SERVICE CONFIGURATION",
+      "VIEW NETWORK CONNECTIONS"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.financial.calculator",
+    "app_name": "Financial Calculators",
+    "category": "Finance",
+    "description": "For phone and tablet, this application includes the complete package of financial calculators by Bishinews: Finance and Investment Calculators * TVM Calculator * Currency Converter * Compound Interest Calculator * Return On Investment (ROI) Calculator * IRR NPV Calculator * MIRR Calculator * Bond Calculator * Tax Equivalent Yield Calculator * Rule of 72 Calculator Loan/Mortgage Calculators * Loan/Mortgage Calculator * Loan Comparison Calculator * Loan Refinance Calculator * APR Calculator * APR Advanced Calculator * Commercial Loan Calculator * Simple Loan Calculator * Loan Analysis Calculator * Home Affordability Calculator * Rent vs Buy Calculator * Mortgage Tax Saving Calculator * Discount Points Calculator * Adjustable Rate Calculator * Fixed vs Adjustable Rate Calculator * Bi-weekly Payment Calculator * Interest Only Calculator * Rental Property Calculator Retirement Calculators * Retirement Planner * 401k Contribution Calculator * Retirement Calculator * Retirement Savings Analysis * Retirement Income Analysis * Traditional IRA vs Roth IRA * Required Minimum Distribution * Social Security Estimator * Asset Allocation Calculator * 401k Save the Max Calculator * College Savings Calculator Stock Calculators * Stock Return Calculator * Stock Constant Growth Calculator * Stock Non-constant Growth Calculator * CAPM Calculator * Expected Return Calculator * Holding Period Return Calculator * Weighted Average Cost of Capital Calculator * Pivot Point Calculator * Fibonacci Calculator * Black-Scholes Option Calculator Credit Card Calculators * Credit Card Payoff Calculator * Credit Card Minimum Calculator Auto Loan and Lease Calculators * Auto Loan Calculator * Auto Lease Calculator Miscellaneous Calculators * Regular Calculator * Tip Calculator * Discount and Tax Calculator * Percentage Calculator * Date Calculator * Unit Conversion * US Inflation Calculator * Margin and Markup Calculator * Fuel Calculator * Salary Increase Calculator * US Paycheck Tax Calculator * US Health Savings Account Calculator * Net Distribution Calculator * Effective Rate Calculator * Mutual Fund Fee Calculator * Unit Price Compare Calculator * Balance Sheet and Income Statement Analysis * Financial Ratios * US Interest Rate * US Mortgage Rate * Commodities and Futures User can send the calculation results to others via Email. Financial Professionals can email the quote to their clients. The app allows you to edit and prioritize the list of calculators for easy access. Only Currency Converter needs internet access to retrieve the latest currency exchange rate. The app works without internet connection. 100% FREE – full features, no hidden charges or in-app purchases This app doesn't request any permission. Please send question and suggestion to us at pfinanceapp@gmail.com. We actively support users.",
+    "permissions": [
+      "DRAW OVER OTHER APPS",
+      "FULL NETWORK ACCESS",
+      "PREVENT DEVICE FROM SLEEPING",
+      "VIEW NETWORK CONNECTIONS"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.digitalchemy.currencyconverter",
+    "app_name": "Currency Converter Plus Rates",
+    "category": "Travel & Local",
+    "description": "From the makers of Calculator Plus comes Currency Converter Plus free! Our currency converter is the easiest, most user-friendly app for global exchange rates, with AccuRate™! With multiple currency fields, historic exchange rate charts, and a built-in currency calculator for convenience, compare prices anywhere while traveling abroad to be sure you're getting the best deal at today's rate. All conversions use live exchange rates from AccuRate™, providing the most accurate rates available in the world. Plus, this is a currency converter offline for travel when exchange rate data is not available. The currency converter even supports Bitcoin (BTC) and cryptocurrencies such as Ethereum (ETH), Dash, Dogecoin (DOGE), Litecoin (LTC), Monero (XMR), Ripple (XR). Get real-time digital currency rates and convert cryptocurrency! Whether you're traveling, shopping internationally, or managing your investments, our currency app provides a user-friendly experience for all your currency conversion needs. Stay informed about global exchange rates effortlessly with this convenient currency widget. Our widget ensures quick access to accurate currency conversions without the need to open a money exchange app. Features: * Instant currency conversion by setting your own custom fields! Set custom exchange rates for personalized currency conversions. * Easy currency converter calculator with results in local currencies. * Advanced historic rate charts and graphs (from 1 week to 5 years). Explore extended rate history for in-depth market analysis. * Convert multiple currencies at once. * Currency converter widget. Get instant access to real-time exchange rates. * Price converter. Instantly convert prices using your camera. * All world currencies, Bitcoin, and precious metals. * Offline exchange rate support for airplane or offline modes. * Live rates & graphs provided by AccuRate™. Stay informed about global exchange rates effortlessly with this convenient widget, supporting over 160 currencies. Whether you're a frequent traveler, online shopper, or financial enthusiast, our widget ensures quick access to accurate currency conversions without the need to open a separate app. Easily convert between 160+ currencies with real-time exchange rates, ensuring precise and up-to-date calculations. Money converter supports currencies for every country including the dollar, euro, pound, yen, yuan, won, franc, ruble, dinar, peso, rupee, shilling, rial, kwacha, dirham, florin, guinea, krona, krone, riyal, colon, som, leu, virtual currencies like Bitcoin, plus precious metals like gold, silver, palladium, platinum and more! Currency Converter Plus Free (C) 2021 Digitalchemy, LLC",
+    "permissions": [
+      "APPROXIMATE LOCATION (NETWORK-BASED)",
+      "PRECISE LOCATION (GPS AND NETWORK-BASED)",
+      "TAKE PICTURES AND VIDEOS",
+      "VIEW WI-FI CONNECTIONS",
+      "GOOGLE PLAY LICENSE CHECK",
+      "CONTROL VIBRATION",
+      "FULL NETWORK ACCESS",
+      "PREVENT DEVICE FROM SLEEPING",
+      "RUN AT STARTUP",
+      "VIEW NETWORK CONNECTIONS"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.segitiga.fc10bapro",
+    "app_name": "10BA Pro Financial Calculator",
+    "category": "Productivity",
+    "description": "The 10BA Financial Calculator works like the industry standard financial calculator such as the HP 10B, HP 10BII, or the HP 10BII+ emulator; however, we add tons of unique features that makes this app be the most convenient financial calculator that you have ever used. Single-Access Key No need to use a shift key to access the yellow or the blue functions. The Single-Access Key feature enables you to activate the yellow and the blue functions quickly and conveniently. Integrated Cheatsheet No need to memorize anything. Each functions on the calculator has a cheatsheet containing brief description of how the function works, and examples. Anti-Boring Replace the background with an image from your photo gallery. You can even make it transparent like the interface you often see on TV, kind of. Zero-Learning Curve Already familiar with the 10BII+ or similar financial calculator? Practically there is no learning curve with the 10BA Pro. We add features that makes it even easier to use than the real thing. Peace of Mind The 10BA Pro has hundreds of functions. Many of them you'll probably never use. But you know they are there in case you need them. Integrated Currency Converter Currency converter is integrated into the calculator and is only a keystroke away. Statistical Distribution Functions A separate screen for Statistics so many functions can be accomodated. Calculate most distribution functions that you find at the back of a statistics book! Amortization Schedule Produce an amortization schedule that you can convert into Excel format and later share with your contacts. Financial Functions • TVM: Number of periods, Interest/year, Present value, Periodic payment, Future value, Amortization, Amortization schedule • Business percentages: Percent, Percent change, Markup, Cost, Price, Margin • Cashflow analysis: IRR, MIRR, Net present value, Net future value • Depreciation: Straight line, Sum of the years’ digits, Declining balance • Interest conversion: Nominal, Effective • Break even analysis: Units, Sales price, Variable cost, Fixed cost, Profit • Bonds: Accrued interest, YTM, Price, Coupon, Call, 360/Actual, Semiannual/Annual • Calendar functions: Date, Date difference, 360/Actual Statistical Functions • Summary statistics • Regressions: Linear, Exponential, Logarithmic, Power, Exponent, Inverse • X-Estimates, Y-Estimates, Correlation • Standard deviation: Sample, Population • Average, Weighted average • Permutation, Combination • Distribution: Binomial, Poisson, Normal, Inverse Normal, Student-t, Inverse Student-t, Chi-Square, Inverse Chi-Square, F, Inverse F • Pseudo random number Mathematical functions • Basic arithmetic • Trigonometric, Inverse trigonometric • Hyperbolic, Inverse Hyperbolic For TI Users, before you post a one-star review asking where the CPT button is. There is no [CPT] button by design so don't look for it. The app does not need the [CPT] key. To find future value [FV] instead of [CPT][FV] just tap [FV]. Read the integrated Help feature for details, or simply contact us! Feedback and Contact Info Please contact us for feedback, suggestions for improvement, or bugs at info@segitiga.pro Privacy Policy 10BA Pro Financial Calculator does not collect, store, or transmit information about its users. The use of \"allow to take pictures and record video\" permission is for the application to use the back camera and achieve transparent background effect. The use of \"allow to access photos, media, and files on your device\" permission is to enable you to select an image from the gallery folder as calculator background. The permission is also necessary if you want to convert the amortization schedule into Excel format because the app needs to save the converted file into the Documents folder.",
+    "permissions": [
+      "MODIFY OR DELETE THE CONTENTS OF YOUR USB STORAGE",
+      "READ THE CONTENTS OF YOUR USB STORAGE",
+      "TAKE PICTURES AND VIDEOS",
+      "CONTROL VIBRATION",
+      "FULL NETWORK ACCESS",
+      "VIEW NETWORK CONNECTIONS"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.androidapps.unitconverter",
+    "app_name": "Unit Converter",
+    "category": "Tools",
+    "description": "Unit Converter is a simple, smart and elegant tool with more than 70 categories of units that are used in daily life. This is the only Unit Converter App in Google play store that has such a wide range of Unit conversion features with very simple and easy to use interface. Despite of having more than 100 features and wide range of categories, unit converter takes up just less than 4 MB storage in your device. Vast usage, easy handling, Simple design, Premium Contents, Regular feature updates are the reasons for our App is loved and supported by more than 5 million users. BEST FEATURES OF UNIT CONVERTER APP ✓ Built-In real time Currency Converter with 150 world currencies and their latest exchange rates. ✓ 72 unit categories, 12700+ unit conversions ✓ Smart Tools - Bubble Level, Compass, Protractor, Resistor codes, Logic Gates, Stop Watch, Ruler, World Time, Date Converter and much more. ✓ New Tools - Battery Monitor, Notes, Expression Evaluation, Equation Solver, Induction Color codes, Scientific Calculator ✓ Financial calculators - Loan calculator, Compound interest calculator, Retirement calculator, Service tax calculator, Stock calculator ✓ Math calculators -Roman numeral converter, Number base converter, Number series generator, Ratio, Fraction, Proportion, etc. ✓ Has most important conversion tools that are used in daily life including Fuel Calculations, Temperature, Volume, Speed, Weight, Computer Storage, Angle, Power, Viscosity, Force, Energy, Torque, Density and much more… ✓ Has Engineering conversion tools like radiation, electric resistance, electric capacitance, inductance, inertia, specific heat density, specific heat capacity, and illumination. ✓ Premium contents - onetime payment to remove ads and get access to the premium contents ✓ Offline Currency Converter feature lets you to convert all the world currencies without connecting to the internet. ✓ Download exchange rates - now premium users can download the latest currency exchange rates to their device ✓ Has the highest number of unit conversion categories among all other unit converters. ✓ Now you can add a Unit converter Widget to your home screen and convert all the units without opening the application ✓ Time Zone Calculator with day light savings and accurate time differences calculations. ✓ Built-In Calculator to perform basic arithmetic operations on the fly while using the unit converter. ✓ Built-In Search functionality, Application shortcuts ✓ Supports both Metric and Imperial Units ✓ A Feature to add your own Custom Unit and favorite Conversions. ✓ First ever Unit Conversion App to feature and support Latest Material design. Device permissions and usage ★ android.permission.INTERNET : to fetch latest currency exchange rates from the internet ★ com.android.vending.BILLING : to remove ads and get access to premium contents of unit converter. ★ android.permission.WRITE_EXTERNAL_STORAGE : to download latest currency exchange rates to the device and access it. (premium feature) Our Unit Converter is the highest rated Unit Converter App in Google play store. Our app has over a 5 Million user base . Our unit converter app has the likes of various users ranging from students to a high-level Professional who use conversion tools for their daily activities which serves their purpose. P.S. Unit converter was designed with the goal of supporting wide range of devices from small screen phone devices to large screen tablets plus it features worldwide languages and their conversion system. We aim to add and support more range of units to the application in the near future. Thanks for your continuous support.",
+    "permissions": [
+      "MODIFY OR DELETE THE CONTENTS OF YOUR USB STORAGE",
+      "READ THE CONTENTS OF YOUR USB STORAGE",
+      "VIEW WI-FI CONNECTIONS",
+      "FULL NETWORK ACCESS",
+      "PREVENT DEVICE FROM SLEEPING",
+      "VIEW NETWORK CONNECTIONS"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.easecraft.financialcalculator",
+    "app_name": "Financial Calculator",
+    "category": "Tools",
+    "description": "🎯 All-in-One Financial Toolkit Calculate SIP returns, EMI, compound interest, loan eligibility, and much more with our comprehensive financial calculator app. Perfect for investors, home buyers, and financial planning enthusiasts. All-in-One Financial Toolkit Investment Calculators SIP Calculator Mutual Fund Calculator SWP Calculator Lumpsum Calculator CAGR Calculator Loan & EMI Calculators EMI Calculator Home Loan Calculator Loan Comparison Calculator Deposit & Savings Calculators FD Calculator RD Calculator PPF Calculator NPS Calculator SSY Calculator Basic & Utility Calculators Simple Interest Calculator Compound Interest Calculator Currency Calculator Time Cost Calculator Trip Cost Calculator Gold Calculator Financial Planning Tools Retirement Planner Education Planner Emergency Fund Calculator Goal Planning Rent vs Buy Calculator Tax & Salary Calculators HRA Calculator Gratuity Calculator device Storage: Local data protected by device and can save data",
+    "permissions": [
+      "GOOGLE PLAY LICENSE CHECK",
+      "CONTROL VIBRATION",
+      "FULL NETWORK ACCESS"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "currencyconverter.exchangerate.currencylist",
+    "app_name": "Currency Converter Calculator",
+    "category": "Tools",
+    "description": "My Currency Converter Calculator - The Very Best of Solutions for Money Conversion! We have the perfect tool to assist in currency exchange with the My Currency Converter Calculator. The Currency Converter Money Exchange Rates will help you travel abroad, shop online, or manage your finances well. This Money Converter: Currency App aims to give you exact rates in real-time and a super-smooth currency conversion experience. Know the latest and most correct rates for over 170 currencies worldwide and easily track each financial transaction. 💹 Money Converter: Currency App Key Features: 💹 💱 Real-time Exchange Rate: Currency Calculator for accurate and up-to-date currency conversion; 💱Over 170 currencies are supported to provide comprehensive features in a Money Conversion Calculator; 💱The exchange rates get updated daily in the Currency Converter Money Exchange Rates for reliable accuracy; 💱Simple and intuitive interface designed for fast calculations on the go; 💱Save your favorite currencies for quick access with My Currency Converter Calculator; 💱Offline mode: Convert currency even when you've lost your internet connection; 💱It has an internal 'Money Conversion Calculator' for an easy arithmetic operation while converting one currency to another; 💱Smaller app size for better performance and less storage space consumption. The Ultimate Money Conversion Calculator! Keep every record of all your financial transactions from anywhere in the world using this most dependable Money Converter: Currency App. The Exchange Rate: Currency Calculator provides real-time information even offline so that there is no cause of worry while managing your money anywhere and at any time. User-friendly Exchange Rate: Currency Calculator: 💸 My Currency Converter Calculator will help you calculate exchange rates in seconds and always know how much your money is worth at home or in another country. From everyday conversions to more complicated financial calculations, use the following Money Converter: Currency App to make it easier on yourself when exchanging your money. Get All Your Financial Calculations in One Place: 🪙 Use the My Currency Converter Calculator to easily switch between currencies, access to favorite currencies, or track rates with a few taps in the Currency Converter Money Exchange Rates. This giant tool ensures you have the most current and exact exchange rates at your fingertips, whether you're dealing with international transactions or local conversions. Get the right currency converter and up-to-date money exchange rates at any moment! Why sweat over irrelevant information or convoluted financial tools when, with My Currency Converter Calculator, you get an application designed to make currency conversion easy while keeping you updated on the current exchange rates? This app can do it all, be it some quick conversions or staying ahead in knowing how different currencies fluctuate against each other over time. Download My Currency Converter Calculator now and discover how easy it is to convert money in real time from anywhere!",
+    "permissions": [
+      "VIEW WI-FI CONNECTIONS",
+      "GOOGLE PLAY LICENSE CHECK",
+      "FULL NETWORK ACCESS",
+      "PREVENT DEVICE FROM SLEEPING",
+      "VIEW NETWORK CONNECTIONS",
+      "RECEIVE DATA FROM INTERNET"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.currency.converter.exchange.rate.money.free",
+    "app_name": "Currency Converter: FX Rates",
+    "category": "Travel & Local",
+    "description": "Exchange Rate Currency Converter: FX Rates - Ultimate Travel Companion! Travel confidently using the Money Converter：Currency App & Exchange Rates, equipped with live exchange rates and a convenient offline mode. Calculate over 180 foreign currencies and popular cryptocurrencies with the Money Conversion Calculator, making it the ideal Currency Exchange Converter: Money Exchange App for global travelers. The main features of Money Converter: Currency Calculator: ✅ Currency converter widget; ✅ Customizable Currency Exchange Converter: Money Exchange App; ✅ Advanced historical rate charts and graphs; ✅ Multiple currencies converting at once; ✅ Offline Money Converter：Currency App & Exchange Rates; ✅ Global Exchange Rate Currency Converter: FX Rates. Efficient and User-Friendly Money Management! Whether you're shopping abroad, the Money Converter：Currency App & Exchange Rates offers a seamless experience. Convert currencies accurately using the Exchange Rate Currency Converter: FX Rates, ensuring you get the most out of every transaction. The Money Conversion Calculator supports traditional and digital currencies, making it a versatile tool for global users. The My Currency Converter Tool app even supports cryptocurrency for added convenience. 📴 Offline Mode for Uninterrupted Access: Our Exchange Rate Currency Converter: FX Rates ensures that recent rates are saved every time you update, allowing you to access the most accurate rates even offline. This My Currency Converter Tool feature makes it easy to manage your finances without a constant internet connection. It provides peace of mind while using the Currency Exchange Converter: Money Exchange App during your travels. 📊 Historical Data and Customizable Features: Stay informed with our comprehensive historical graphs that display foreign currency exchange rates over time. Analyze trends and make informed decisions with the Foreign Exchange Money Calculator by accessing charts for the most popular currencies in preset and custom ranges. 🔍 Real-Time Insights with the Currency Calculator: Our Currency Exchange Converter: Money Exchange App provides instant conversions and offers insights into the real-time value of different currencies. Understand the strength and stability of currencies and make smarter financial decisions while on the move with the Foreign Exchange Money Calculator. ✅ Reliable and Trusted Money Converter: Currency Calculator: As a Money Converter: Currency Calculator that works offline, this Money Conversion Calculator is trusted by thousands worldwide. Whether a frequent traveler or a global shopper, the Exchange Rate Currency Converter: FX Rates ensures you’re always prepared for any monetary challenge. 📲 Get Money Converter: Currency Calculator and Experience It Today! Simple yet powerful, the Money Converter：Currency App & Exchange Rates offers comprehensive functionality with live exchange rates and offline capabilities. Monitor with Exchange Rate Currency Converter: FX Rates and effortlessly convert currency with the advanced Foreign Exchange Money Calculator. Download My Currency Converter Tool and enjoy it today!",
+    "permissions": [
+      "VIEW WI-FI CONNECTIONS",
+      "GOOGLE PLAY LICENSE CHECK",
+      "FULL NETWORK ACCESS",
+      "PREVENT DEVICE FROM SLEEPING",
+      "VIEW NETWORK CONNECTIONS",
+      "RECEIVE DATA FROM INTERNET"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.fwping.calculator",
+    "app_name": "Calculator: History & Money",
+    "category": "Tools",
+    "description": "Looking for a simple calculator that does more than just basic math? Calculator: History & Money is the perfect all-in-one basic calculator designed for your everyday life. Whether you need to solve a quick math problem, review your calculation history, add up work hours, or calculate real-world expenses like shopping discounts and restaurant tips, we have got you covered! Say goodbye to apps that only convert currency — this is a true money calculator built for everyday shopping and finances. MAIN FEATURES ■ SMART BASIC CALCULATOR • Simple & Fast: A clean, intuitive interface for everyday math. • Calculation History: Never lose track of your numbers. Easily review, copy, and reuse past calculations from your history log. • Advanced Math Support: Unlike standard calculators, we support parentheses ( ) and correctly apply the mathematical order of operations (PEMDAS). • Live Result Preview: See the answer instantly as you type your expression. ■ MONEY CALCULATOR & SHOPPING MATH Stop doing mental math at the grocery store or restaurant! Our built-in tools make daily expenses a breeze: • Tip Calculator (Free): Quickly calculate restaurant tips and split the bill among friends. • Sales Tax Calculator: Add or remove local tax with a single tap. • Unit Price Comparison: Compare two items at the supermarket (e.g., price per oz/lb) to find the best value. • Discount Calculator: Calculate sequential discounts (e.g., 30% off + extra 10% off) during shopping sales. • Wage Calculator: Estimate your hourly wage, work hours, and net pay. ■ TIME CALCULATOR • Easily add and subtract hours, minutes, and seconds. • Perfect for calculating work hours, payroll, shifts, or flight durations. • Includes a dedicated time history screen for past records. ■ CLEAN USER EXPERIENCE • Simple, modern interface designed for daily use. • Personalize your app with multiple theme colors. • Dark mode support to protect your eyes. • Multiple language options available. ■ PREMIUM VERSION Upgrade to Premium to unlock the full suite of Money Calculator tools (Tax, Split Bill, Discounts, Unit Price, Wages) and enjoy a completely ad-free calculator experience! (Note: The Tip Calculator remains 100% free for everyone). PERFECT FOR: ✔ Everyday math and homework ✔ Splitting restaurant bills and calculating tips ✔ Supermarket shopping comparisons ✔ Checking store discounts and sales tax ✔ Adding up work hours and timesheets If you want a calculator app that goes beyond basic arithmetic while staying simple and lightweight, Calculator: History & Money is built for you. Download now and make everyday math easier!",
+    "permissions": [
+      "GOOGLE PLAY LICENSE CHECK",
+      "FULL NETWORK ACCESS",
+      "VIEW NETWORK CONNECTIONS"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.newageproductions.financialcalculators.free",
+    "app_name": "Financial Calculators",
+    "category": "Finance",
+    "description": "Check out the FREE version of the financial calculators which performs all major financial calculations that are incredibly useful in our day-to-day lives. Financial Calculators consists of more than 100+ formulas which are broadly classified under four major categories, --General Finance --Banking --Stocks/Bonds and --Corporate/Business Finance --Loan/Mortgage/Auto --Miscellaneous Calculators ***Who can benefit most?*** People from all walks of life, from students, stockbrokers and bankers; to realtors, homeowners and household managers etc. ***Features*** --Supports phones and tablets --Supports multiple languages --Simple and easy to use If you like our work and want an ad free version kindly check out the paid version at: https://play.google.com/store/apps/details?id=com.newageproductions.financialcalculators.pro Thanks for supporting us and please do leave us your valuable comments for improvements.",
+    "permissions": [
+      "GOOGLE PLAY LICENSE CHECK",
+      "FULL NETWORK ACCESS",
+      "PREVENT DEVICE FROM SLEEPING",
+      "VIEW NETWORK CONNECTIONS"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.finance.calculators",
+    "app_name": "Financial Calculator EMI, SIP",
+    "category": "Finance",
+    "description": "Financial Calculators: All-in-One Finance & Investment Toolkit Take control of your finances with Financial Calculators, the ultimate money calculator app for financial planning, loan calculations, investment tracking, and retirement planning. Whether you need to calculate EMIs, SIP returns, stock market profits, or convert currencies, this app provides accurate and easy-to-use financial tools to help you make smarter money decisions. Bank Calculators • EMI Calculator – Calculate loan repayments & mortgage Calculator • Car Loan Calculator – Plan auto financing with ease • Fixed Deposit Calculator (TDR) – Interest payout estimates • Recurring Deposit Calculator (RD) – Track your savings Mutual Fund Calculators • SIP Calculator – Track Systematic Investment Plan growth • Advanced SIP Calculator – Includes lumpsum, step-up, and inflation adjustments • SIP Planner – Plan future investments • SWP Calculator – Plan Systematic Withdrawal strategies Stock Market Calculators • Profit/Loss Calculator – Assess trade profitability • Fair Value Calculator – Find stock intrinsic value • Average Calculator – Calculate stock price averages • Fibonacci Retracement Calculator – Identify key price levels • Pivot Point Calculator – Technical analysis made easy • Options Price Calculator – Evaluate option premiums • Percentage Calculator – Quick percentage calculations • ROI Calculator – Calculate Return on Investment with net profit and percentage returns. General & Interest Calculators • Simple Interest Calculator • Compound Interest Calculator • Inflation Calculator – Track purchasing power changes • Budget Calculator – Keep track of income & expenses Retirement & Goal Planning • Retirement Age Calculator – Plan your retirement timeline • Goal Planner Calculator – Set and track financial goals • Financial Freedom Calculator – Estimate wealth needed for early retirement. Sales & Retail Calculators • Business Calculator – Tools for break-even analysis, cash flow, loans, depreciation, taxes, and employee salary. • Sales Calculator – Quick profit/loss estimates • Discount Calculator – Find price reductions • List Price Markdown Calculator – Calculate markdowns easily. Unit Converter (With Real-Time Currency Rates) • Length, Area, Volume • Time, Temperature, Speed, Mass, Force, Fuel Consumption • Numeral Systems, Pressure, Energy, Power • Angles, Shoe Sizes, Digital Data, SI Prefix, Torque Key Features • Works on All Android Devices – Optimized for smartphones & tablets • Informed Financial Decisions: Get detailed breakdowns of maturity amounts, total deposits, and interest earned. • User-Friendly Interface – Simple, intuitive, and fast • Accurate & Reliable – Make informed financial decisions Why Choose Financial Calculators? • All-in-One Financial Toolkit – Covers loans, investments, stocks, mutual funds, sales, budgeting & more • Free Loan Calculator: Calculate EMIs for car loans, mortgages, and personal loans. • Money Calculator: Track expenses, convert currencies, and manage your budget. • Business Calculator: Tools for break-even analysis, profit margins, and cash flow. Disclaimer These calculators are for guidance purposes only. Please consult financial experts before making investment decisions. We Value Your Feedback! Your reviews help us improve. Download now and let us know how we can make Financial Calculators even better!",
+    "permissions": [
+      "FULL NETWORK ACCESS",
+      "PREVENT DEVICE FROM SLEEPING",
+      "RUN AT STARTUP",
+      "VIEW NETWORK CONNECTIONS"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.dencreak.dlcalculator",
+    "app_name": "ClevCalc - Calculator",
+    "category": "Productivity",
+    "description": "ClevCalc is an all-in-one calculator app that helps you handle all the calculations you need in everyday life with a single application. It offers a clean interface, practical tools, and fast performance for simple and accurate calculations. 🔢 Supported Calculators & Features 1. Calculator (Scientific Calculator) • Supports basic arithmetic, square, root, parentheses, and percentage operations • Scientific functions including trigonometric, exponential, and logarithmic operations • Freely movable cursor to edit expressions while typing • Simple and easy to use • Calculation history available 2. Unit Converter • Length, weight, area, volume, time, temperature, pressure, speed, fuel efficiency, and data size • Covers commonly used units for everyday life 3. Currency Converter • Supports 135 global currencies including USD, EUR, JPY, GBP, and CNY • Automatically applies real-time exchange rates 4. Percentage Calculator • Calculates percentage increase and decrease • Finds what percentage one number is of another 5. Discount Calculator • Instantly calculates discounted prices 6. Loan Calculator • Calculates total interest and total repayment amount 7. Date Calculator • Calculates important dates and anniversaries 8. Health Calculator • Calculates Body Mass Index (BMI) • Calculates Basal Metabolic Rate (BMR) 9. Automobile Fuel Cost Calculator • Calculates estimated fuel costs for trips • Enter distance and fuel efficiency 10. Fuel Efficiency Calculator • Calculates fuel efficiency based on fuel usage 11. GPA Calculator • Accurately calculates your GPA 12. Tip Calculator • Automatically calculates tip amounts • Option to exclude tax from tip • Splits the total amount per person 13. Sales Tax Calculator • Calculates total price including tax 14. Unit Price Calculator • Calculates unit prices based on price and quantity • Compares unit prices of multiple products 15. World Time Converter • Converts time for 400+ cities worldwide • Automatically reflects daylight saving time 16. Ovulation Calculator • Calculates ovulation and fertility based on the menstrual cycle • Allows date-based notes 17. Hexadecimal Converter • Converts between decimal and hexadecimal 18. Savings Calculator • Calculates interest after tax and final savings balance 🎯 Recommended For • Users who want multiple calculators in one app • Students, professionals, and travelers • Anyone looking for a clean and practical calculator",
+    "permissions": [
+      "VIEW WI-FI CONNECTIONS",
+      "GOOGLE PLAY LICENSE CHECK",
+      "CONTROL VIBRATION",
+      "FULL NETWORK ACCESS",
+      "PREVENT DEVICE FROM SLEEPING",
+      "RUN AT STARTUP",
+      "VIEW NETWORK CONNECTIONS"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.currencycalculator.unitconverter",
+    "app_name": "Calculator: Unit & Currency",
+    "category": "Tools",
+    "description": "Experience the perfect blend of simplicity and power. Calculator: Unit & Currency brings you the clean, familiar interface you love (similar to the classic Galaxy style) but packed with the advanced tools you actually need. From solving simple math problems to converting currencies or planning your monthly budget, this is the only calc app you will ever need. 🚀 TOP FEATURES: 🧮 Advanced & Simple Calculater Clean Interface: Large buttons and a user-friendly design make math easy. Scientific Mode: Rotate your screen to access advanced functions like Sine, Cosine, Tangent, and Logarithms. History Tape: Never lose track of your calculations. View and edit your previous steps instantly. 📱 Floating Calculator (Multitasking) Widget Mode: Need to calculate while reading a document or browsing the web? Turn on the Floating Calculator to keep a movable, resizable window on top of any other app. 💱 Currency & Unit Converter Real-time Conversion: Easily calculate exchange rates for Dollars, Euros, Rupees, Yen, and more. Universal Units: Convert Length, Weight, Temperature, Speed, and Data instantly without searching online. 🏦 Loan & Finance Planner EMI Calculator: Simply enter a principal amount and interest rate to estimate monthly payments. Interest Calculator: See exactly how much interest you might pay over time based on your inputs. 📞 Smart After Call Widget Instant Access: Never scramble for a pen again. The calculator appears immediately after your phone calls. Quick Math: Perfect for finalizing deals, splitting bills, or calculating figures discussed over the phone before you forget them. Why choose this Calculator? Whether you are looking for a simple calculater, a robust caculator for school, or a scientific pcalc tool for work, we have you covered. Replace your old caculator today with this smart calc. ⚠️ IMPORTANT DISCLAIMER regarding Financial Features: This application is strictly a financial calculation tool. It is designed solely to help users estimate costs using mathematical formulas. NOT a Loan App: We do not provide loans, issue credit, or facilitate loan disbursement of any kind. No Banking Services: We are not affiliated with any bank or financial institution. Calculation Only: All loan-related figures (EMI, interest, tenure) are generated based on user input for planning purposes only.",
+    "permissions": [
+      "APPROXIMATE LOCATION (NETWORK-BASED)",
+      "PRECISE LOCATION (GPS AND NETWORK-BASED)",
+      "READ PHONE STATUS AND IDENTITY",
+      "GOOGLE PLAY LICENSE CHECK",
+      "CONTROL VIBRATION",
+      "DRAW OVER OTHER APPS",
+      "FULL NETWORK ACCESS",
+      "PREVENT DEVICE FROM SLEEPING",
+      "RUN AT STARTUP",
+      "VIEW NETWORK CONNECTIONS",
+      "RECEIVE DATA FROM INTERNET"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.utility.easyEMI",
+    "app_name": "Financial Calculator",
+    "category": "Tools",
+    "description": "Welcome to your one-stop solution for all things finance! Are you tired of juggling multiple tools and websites to make sense of your finances? Say goodbye to the hassle and hello to simplicity with our powerful financial calculator app. Picture this: You're considering a loan but overwhelmed by the options. Our app's EMI calculator effortlessly breaks down repayment schedules, empowering you to make informed decisions. Compare loans seamlessly, exploring various parameters like loan amount, tenure, and interest rates with ease. Investing? Dive into our suite of investment calculators – FDs, RDs, SIPs, PPFs – and watch your financial goals come to life. Worried about taxes? Our GST and VAT calculators ensure compliance and accuracy every time. But it's not just about numbers. Our app is designed for YOU. Intuitive interfaces, real-time data, and accurate projections make financial planning a breeze for both experts and novices alike. Don't let financial jargon intimidate you. Take control of your financial future today. Download now and unlock the path to financial freedom!",
+    "permissions": [
+      "APPROXIMATE LOCATION (NETWORK-BASED)",
+      "MODIFY OR DELETE THE CONTENTS OF YOUR USB STORAGE",
+      "READ THE CONTENTS OF YOUR USB STORAGE",
+      "GOOGLE PLAY LICENSE CHECK",
+      "FULL NETWORK ACCESS",
+      "VIEW NETWORK CONNECTIONS"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.newsmedislists.financial_calculator",
+    "app_name": "Financial Calculators",
+    "category": "Tools",
+    "description": "Financial Toolkit is your all-in-one financial calculator app designed to simplify your money management. Whether you’re calculating loan payments, estimating investment returns, or figuring out your salary growth, this app helps you make smart and confident financial decisions — instantly and accurately. From tax and tip calculators to mortgage and ROI tools, every calculator is optimized for accuracy and usability. Whether you’re a student, business owner, accountant, or investor — this finance toolkit puts essential financial tools right in your pocket. 💼 App Overview The Financial Toolkit App brings together multiple financial, investment, and loan calculators under one clean, intuitive interface. You can calculate, save, share, and review results anytime — all in one place. Perfect for personal finance management, budget planning, investment comparison, and loan analysis. The app offers detailed explanations, references, and historical data for each tool, so you can understand how your finances work, not just the numbers. ⚙️ Key Features ✅ Comprehensive Toolkit: Access financial calculators across three main categories — General Calculators, Loan Calculators, and Investment Tools. ✅ User-Friendly Interface: Simple and elegant design for quick inputs and instant results — no technical skills needed. ✅ Result Saving & History: Save your calculations and revisit them anytime from your history log. ✅ Share Instantly: Easily share your results with friends, family, or colleagues through social apps or email. ✅ Financial Reference Data: Each calculator includes definitions, formulas, and financial terms for clarity and transparency. ✅ Accurate & Reliable: All calculators follow standard financial formulas used globally by banks, businesses, and financial analysts. 🧾 Tool Categories & Calculators 🔹 General Calculators 1. Sales Tax Calculator – Calculate total price including or excluding tax. 2. Tip Calculator – Split bills and calculate tips instantly. 3. Percentage Calculator – Compute increase/decrease, discount, or ratio. 4. Hourly to Salary Calculator – Convert hourly pay to yearly or monthly salary. 5. Salary Increase Calculator – Measure your raise or new salary after an increment. 🔹 Loan Calculators 6. Loan Calculator (Basic & Advanced) – Calculate EMI, interest, and amortization schedule. 7. Business Loan Calculator – Analyze repayment and interest for business finance. 8. Mortgage Calculator – Plan your home loan effectively. 9. Auto Loan Calculator – Estimate car loan payments and total cost. 10. Credit Card Payoff Calculator 11. Credit Card Minimum Payment Calculator 12. Personal Loan Calculator 13. General & Mortgage APR Calculator 🔹 Investment Calculators 12. Fixed Deposit – TDR (Interest Payout) – Calculate interest for periodic payouts. 13. Fixed Deposit – STDR (Cumulative) – Estimate maturity value for reinvested interest. 14. Recurring Deposit (DPS) – Track returns for monthly deposit plans. 15. Return on Investment (ROI) – Evaluate investment efficiency and profitability. 16. Interest Calculator (Simple & Compound) – Find growth over time. 17. Rule of 72 Calculator – Estimate doubling time for your investment. 🌟 Why Choose Financial Toolkit? 📊 Designed for real-world financial use 💰 Ideal for students, professionals, business owners, and investors ⚡ Fast, lightweight, and works offline 🌐 Supports multiple currencies and formats 🔒 Secure and private – no personal data collected 📢 Share the Power of Smart Finance Empower your friends and family with better financial insights — share the Financial Toolkit App today and help others manage money smarter! ⚠️ Disclaimer The Financial Toolkit App is intended for educational and personal use only. Results are based on standard formulas and should not be treated as professional financial or investment advice. Always consult with your financial advisor for official guidance.",
+    "permissions": [
+      "GOOGLE PLAY LICENSE CHECK",
+      "FULL NETWORK ACCESS",
+      "PREVENT DEVICE FROM SLEEPING",
+      "VIEW NETWORK CONNECTIONS"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.hpcalcs.hp12c",
+    "app_name": "HP 12c Financial Calculator",
+    "category": "Tools",
+    "description": "Meet the next generation of your favorite financial calculator. The official HP 12c app, now brings a completely redesigned interface, a modern look, and improved functionality—while preserving the precision and reliability trusted by professionals for decades. Built for everyday use in business, banking, real estate, and education, the new HP 12c brings a timeless classic into the modern era. The HP 12c You Know – Now Better Than Ever - Official emulator of legendary calculator device by Hewlett-Packard - Identical algorithms, layout, and keystrokes as the original HP 12c - RPN (Reverse Polish Notation) for fast and efficient input - Built-in financial tools: loan payments, TVM, NPV, IRR, cash flows, bonds, and more Be Ready. Anywhere. Anytime. Whether you’re in class, at the office, or on the go, HP 12c is ready when you are. Just launch the app on your iPhone and get to work. Download HP 12c today and experience the perfect blend of classic functionality and modern design.",
+    "permissions": [
+      "GOOGLE PLAY LICENSE CHECK",
+      "FULL NETWORK ACCESS",
+      "PREVENT DEVICE FROM SLEEPING"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.financial.calculator.pro",
+    "app_name": "Financial Calculators Pro",
+    "category": "Finance",
+    "description": "For phone and tablet, this application includes the complete package of financial calculators by Bishinews: Finance and Investment Calculators * TVM Calculator * Currency Converter * Compound Interest Calculator * Return On Investment (ROI) Calculator * IRR NPV Calculator * MIRR Calculator * Bond Calculator * Tax Equivalent Yield Calculator * Rule of 72 Calculator Loan/Mortgage Calculators * Loan Calculator * Loan Comparison Calculator * Loan Refinance Calculator * APR Calculator * APR Advanced Calculator * Commercial Loan Calculator * Simple Loan Calculator * Loan Analysis Calculator * Home Affordability Calculator * Rent vs Buy Calculator * Mortgage Tax Saving Calculator * Discount Points Calculator * Adjustable Rate Calculator * Fixed vs Adjustable Rate Calculator * Bi-weekly Payment Calculator * Interest Only Calculator * Rental Property Calculator Retirement Calculators * Retirement Planner * 401k Contribution Calculator * Retirement Calculator * Retirement Savings Analysis * Retirement Income Analysis * Traditional IRA vs Roth IRA * Required Minimum Distribution * Social Security Estimator * Asset Allocation Calculator * 401k Save the Max Calculator * College Savings Calculator Stock Calculators * Stock Return Calculator * Stock Constant Growth Calculator * Stock Non-constant Growth Calculator * CAPM Calculator * Expected Return Calculator * Holding Period Return Calculator * Weighted Average Cost of Capital Calculator * Pivot Point Calculator * Fibonacci Calculator * Black-Scholes Option Calculator Credit Card Calculators * Credit Card Payoff Calculator * Credit Card Minimum Calculator Auto Loan and Lease Calculators * Auto Loan Calculator * Auto Lease Calculator Miscellaneous Calculators * Regular Calculator * Tip Calculator * Discount and Tax Calculator * Percentage Calculator * Date Calculator * Unit Conversion * US Inflation Calculator * Margin and Markup Calculator * Fuel Calculator * Salary Increase Calculator * US Paycheck Tax Calculator * US Health Savings Account Calculator * Net Distribution Calculator * Effective Rate Calculator * Mutual Fund Fee Calculator * Unit Price Compare Calculator * Balance Sheet and Income Statement Analysis * Financial Ratios * US Interest Rate * US Mortgage Rate * Commodities and Futures User can send the calculation results to others via Email. Financial Professionals can email the quote to their clients. The app allows you to edit and prioritize the list of calculators for easy access. Only Currency Converter needs internet access to retrieve the latest currency exchange rate. The app works without internet connection. This app doesn't request any permission. This is pro edition of the popular Financial Calculators app. This app has no Ads. Please send question and suggestion to us at pfinanceapp@gmail.com. We actively support users.",
+    "permissions": [
+      "GOOGLE PLAY LICENSE CHECK",
+      "DRAW OVER OTHER APPS",
+      "FULL NETWORK ACCESS",
+      "VIEW NETWORK CONNECTIONS"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.fxapps.currencyconverter.live",
+    "app_name": "Currency Converter & Rates",
+    "category": "Finance",
+    "description": "Currency Converter App & Live Exchange Rates Looking for the best currency converter app to convert currency instantly? This powerful currency converter provides live exchange rates and accurate currency conversion rates from around the world. Whether you're traveling, shopping internationally, trading forex, or managing global business payments — this free currency converter app helps you stay updated with real-time currency exchange rates and currency conversion rates worldwide. 🌎 Why Choose This Currency Converter App? ✔ Real-time exchange rates ✔ Supports 160+ global currencies ✔ Travel mode ✔ Fast & simple calculator ✔ Clean and user-friendly design ✔ Rate history & charts ✔ Favorite currencies list This currency converter app is designed for speed, accuracy, and simplicity — making it one of the best currency converter apps for everyday currency exchange and currency conversion rates tracking. Perfect for travelers, freelancers, investors, students, and international shoppers. 💵 Popular Conversions USD to EUR USD to INR GBP to USD AED to INR CAD to USD AUD to USD Track dollar rates, euro exchange rates, rupee exchange rates, and global currency exchange rates in seconds using this fast and reliable currency converter. Easily convert currency anytime with this free currency converter app. Whether you need a currency calculator, money converter app, or live exchange rates tracker — this currency converter handles all your currency conversion needs. 📊 Smart Features • Multi-currency comparison • Built-in currency calculator • Automatic rate updates • Historical charts • Offline currency converter mode • Mid market rate tracking • Detailed currency rate charts • Works worldwide Whether you're planning a trip to the United States, Europe, UAE, or Asia — get accurate foreign exchange rates and convert currency with real-time live exchange rates anytime. ✈️ Ideal For International travel Forex beginners Online shopping Remote workers Business owners Students studying abroad Perfect for anyone looking for a reliable currency converter app with live exchange rates and accurate currency conversion rates worldwide. 🔐 Disclaimer Exchange rates are for informational purposes only and may vary from bank or market rates.",
+    "permissions": [
+      "READ YOUR CONTACTS",
+      "DIRECTLY CALL PHONE NUMBERS",
+      "READ PHONE STATUS AND IDENTITY",
+      "READ THE CONTENTS OF YOUR USB STORAGE",
+      "VIEW WI-FI CONNECTIONS",
+      "GOOGLE PLAY LICENSE CHECK",
+      "CHANGE YOUR AUDIO SETTINGS",
+      "CONNECT AND DISCONNECT FROM WI-FI",
+      "CONTROL VIBRATION",
+      "DRAW OVER OTHER APPS",
+      "EXPAND/COLLAPSE STATUS BAR",
+      "FULL NETWORK ACCESS",
+      "PREVENT DEVICE FROM SLEEPING",
+      "RUN AT STARTUP",
+      "SET WALLPAPER",
+      "VIEW NETWORK CONNECTIONS",
+      "ADJUST YOUR WALLPAPER SIZE",
+      "CHANGE SCREEN ORIENTATION",
+      "CHOOSE WIDGETS",
+      "DISABLE OR MODIFY STATUS BAR",
+      "DISPLAY UNAUTHORIZED WINDOWS",
+      "FORCE STOP OTHER APPS",
+      "FULL LICENSE TO INTERACT ACROSS USERS",
+      "INTERACT ACROSS USERS",
+      "MANAGE USERS",
+      "MODIFY SECURE SYSTEM SETTINGS",
+      "PREVENT APP SWITCHES",
+      "READ FRAME BUFFER",
+      "RECEIVE DATA FROM INTERNET",
+      "START A TASK FROM RECENTS",
+      "STATUS BAR",
+      "STOP RUNNING APPS",
+      "UPDATE COMPONENT USAGE STATISTICS"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.digitalchemy.calculator.freedecimal",
+    "app_name": "Calculator Plus with History",
+    "category": "Tools",
+    "description": "Calculator Plus is your basic calculator app for Android. The Calculator is designed for everyday math, school, budgeting, shopping, or business calculations. Solve daily number tasks quickly — split bills, calculate discounts, or check totals. This easy calculator is your choice for fast, accurate results. What are Core Basic Calculator Functions? Easy Calculator for Daily Needs Add, subtract, multiply, divide and use essential math functions with precision. Calculate monthly expenses, track bills, manage your personal budget, or solve quick math problems — the basic calculator functions give you instant results. Big Buttons and Large Display for Error-Free Input See numbers clearly on a large screen and tap confidently with oversized buttons. This layout reduces input mistakes, improves accuracy, and keeps the calculator comfortable to use on the go or in fast-paced situations. Calculation History for Review and Verification Access your full calculation history to double-check totals, catch errors, and review previous results. This feature is ideal for reviewing shopping totals, confirming invoice amounts, or checking step-by-step math without starting over. Memory Function for Complex Calculations Store intermediate results and reuse them whenever you need. The memory feature helps you handle multi-step calculations, compare values, and complete longer math tasks without writing numbers down. Percentage Calculator for Real-Life Scenarios Calculate discounts, tips, markups, ratios, and percentage changes. Whether you’re asking “How much is 20% off?” or “What tip should I leave?”, this feature delivers clear answers instantly. Calc with Custom Themes for Personal Comfort Choose a visual theme that fits your style and improves readability. A personalized interface makes frequent use more comfortable and supports long-term daily habits. Multi-Window Mode for Faster Workflow Open multiple calculator windows on one device to compare numbers, run parallel calculations, or manage separate totals. This is especially useful for budgeting, business estimates, or side-by-side price comparisons. Why choose Calculator Plus? Everyday Use Cases Use this free calculator app to: ✔️Calculate daily expenses and track household bills ✔️Split restaurant checks and calculate tips ✔️Check discounts and final prices while shopping ✔️Verify invoices and financial documents ✔️Save time with memory buttons and calculation history ✔️Solve everyday math problems Who is this calculator suitable for? The free calculator version covers essential math needs for: ✔️Schoolchildren ✔️Students ✔️Professionals ✔️Small business owners ✔️Anyone managing personal finances What are advanced Calculator Pro Features? Calculator Widget on Home Screen Add the calculator widget to your home screen for instant access and quick calculations without opening the full app. Calc with Grand Total for Summarizing Results Combine multiple calculations into one final amount with a single tap. The Grand Total feature simplifies expense tracking, cost summaries, and business calculations. Tax Calculator app Calculate prices with or without tax. This calc tool helps you understand final costs, prepare quotes, review receipts, and avoid pricing errors. Make Notes in Calculation History Add notes to saved calculations for better organization. Label entries to track expenses, identify transactions, or document financial decisions clearly. Calculator Plus is built for anyone who needs a dependable, easy-to-use calculator for daily life. Whether you need a basic calculator, a calculator with history, a percentage calculator, a calculator widget, or an advanced calculator for tax and total summaries, this app supports accurate and efficient number management. Download Calculator Plus and simplify the way you calculate, budget, and manage your numbers every day.",
+    "permissions": [
+      "CONTROL VIBRATION",
+      "FULL NETWORK ACCESS",
+      "PREVENT DEVICE FROM SLEEPING",
+      "RUN AT STARTUP",
+      "VIEW NETWORK CONNECTIONS"
+    ],
+    "source": "apps_dataset"
+  },
+  {
+    "app_id": "com.mezhevikin.converter",
+    "app_name": "Currency converter offline",
+    "category": "Travel & Local",
+    "description": "Currency converter app. + Offline mode. It works without the Internet. + 150 world currencies. + Small application size. + Calculator (+ - × ÷). + Blockchain Cryptocurrencies (Bitcoin, Ethereum, Litecoin). + The exact exchange rate. + Smart currency search. + Copy and paste numbers. + Dark theme. + Written in Kotlin.",
+    "permissions": [
+      "GOOGLE PLAY LICENSE CHECK",
+      "FULL NETWORK ACCESS",
+      "PREVENT DEVICE FROM SLEEPING",
+      "VIEW NETWORK CONNECTIONS"
+    ],
+    "source": "apps_dataset"
   }
 ]

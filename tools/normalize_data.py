@@ -40,7 +40,7 @@ def humanize_permission_name(name: str) -> str:
     name = normalize_permission_name(name)
     return name.replace('_', ' ').title()
 
-
+#this function takes a raw permissions input, which can be in various formats (string, list, dict), and processes it to produce a clean list of unique permission names. It handles different input types, splits strings by common delimiters, normalizes permission names using a predefined mapping of aliases, and ensures that the final output is a list of standardized permission tags that can be easily used in our application.
 def flatten_permissions(raw_permissions: Any) -> List[str]:
     if raw_permissions is None:
         return []
@@ -50,6 +50,7 @@ def flatten_permissions(raw_permissions: Any) -> List[str]:
             values.extend(flatten_permissions(value))
         raw_permissions = values
     if isinstance(raw_permissions, str):
+        # Split by common delimiters and strip whitespace
         raw_permissions = [item.strip() for item in re.split(r'[;,\n]+', raw_permissions) if item.strip()]
     if isinstance(raw_permissions, Iterable) and not isinstance(raw_permissions, (str, bytes)):
         normalized = []

@@ -6,7 +6,7 @@ from typing import Dict, List
 import chromadb
 from sentence_transformers import SentenceTransformer
 
-
+# This function is a simple utility to load JSON data from a file. It reads the file and parses it into a Python dictionary or list, depending on the structure of the JSON. This allows us to easily work with the data in our code.
 def load_json_file(path: Path):
     with open(path, 'r', encoding='utf-8') as f:
         return json.load(f)
@@ -26,13 +26,13 @@ def build_app_text(record: Dict) -> str:
     parts = [record.get('app_name', ''), record.get('category', ''), record.get('description', ''), f'Permissions: {permissions}']
     return ' '.join([p for p in parts if p])
 
-
+# this function checks if a collection with the specified name already exists in the Chroma database, and if it does, it deletes that collection. This is useful to ensure that when we create a new collection for indexing, we are not mixing old data with new data, which could lead to confusion or inaccuracies in our vector search results.
 def delete_collection_if_exists(client: chromadb.Client, name: str) -> None:
     existing = [c.name for c in client.list_collections()]
     if name in existing:
         client.delete_collection(name)
 
-
+#This function is responsible for creating a new collection in the Chroma database. It first checks if a collection with the specified name already exists, and if it does, it deletes it to ensure that we start with a clean slate. Then, it creates and returns a new collection with the given name. This is important for our indexing process, as we want to ensure that we are not mixing old data with new data when we build our vector index.
 def create_collection(client: chromadb.Client, name: str) -> chromadb.api.models.Collection.Collection:
     delete_collection_if_exists(client, name)
     return client.create_collection(name=name)
