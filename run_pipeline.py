@@ -7,7 +7,7 @@ from typing import Dict, List
 from extract_permissions import extract_permissions
 from llm_utils import call_llm, parse_json_response
 from tools.query_index import load_chroma_client, search_collection, build_query_text
-
+# A small basic cannaolization layer for permission names to help unify references across different sources (e.g., the raw permission database, LLM outputs, and APK-extracted permissions). This is not meant to be exhaustive but can be expanded as needed.
 PERMISSION_ALIASES = {
     'SCHEDULE_EXACT_ALARM': 'USE_EXACT_ALARM',
     'CONTROL_FLASHLIGHT': 'FLASHLIGHT',
@@ -23,7 +23,7 @@ def canonicalize_permission_name(name: str) -> str:
 def canonicalize_permissions(names: List[str]) -> List[str]:
     return [canonicalize_permission_name(name) for name in names if name and name.strip()]
 
-# // This is a feature of my project for giving accurate permision refernce to llm through this i am givig the context of adnroid permission reference and similar app examples to llm so that it can give more accurate result.
+# // This is a feature of my project for giving accurate permision refernce to llm through in this i am giving the context of adnroid permission reference and similar app examples to llm so that it can give more accurate result.
 def format_retrieval_context(permission_hits: List[Dict], app_hits: List[Dict], max_hits: int = 3) -> str:
     lines: List[str] = ['Retrieved context from the permission reference database and similar app examples:']
 
@@ -119,6 +119,7 @@ def infer_expected_permissions_by_profile(actual_permissions: List[str]) -> List
     perms = set(map(str.upper, actual_permissions))
     expected: list[str] = []
 
+    # Flashlight/Torch apps
     if 'FLASHLIGHT' in perms or 'CONTROL_FLASHLIGHT' in perms:
         expected.append('FLASHLIGHT')
         if 'CAMERA' in perms:
@@ -128,6 +129,36 @@ def infer_expected_permissions_by_profile(actual_permissions: List[str]) -> List
         if 'CONTROL_VIBRATION' in perms or 'VIBRATE' in perms:
             expected.append('CONTROL_VIBRATION')
 
+    # Banking apps - expect INTERNET, GET_ACCOUNTS, READ_SMS (for OTP), USE_BIOMETRIC
+    if {'INTERNET', 'GET_ACCOUNTS'} <= perms or (len(perms & {'READ_SMS', 'USE_BIOMETRIC', 'GET_ACCOUNTS'}) >= 2):
+        for perm in ['INTERNET', 'GET_ACCOUNTS', 'READ_SMS', 'USE_BIOMETRIC']:
+            if perm in perms and perm not in expected:
+                expected.append(perm)
+        if 'READ_CONTACTS' in perms and 'READ_CONTACTS' not in expected:
+            expected.append('READ_CONTACTS')
+
+    # Taxi/Ride-sharing/Maps apps - expect fine/coarse location, internet, phone state
+    if {'ACCESS_FINE_LOCATION', 'ACCESS_COARSE_LOCATION', 'INTERNET'} & perms or (len(perms & {'ACCESS_FINE_LOCATION', 'ACCESS_COARSE_LOCATION'}) >= 1 and 'INTERNET' in perms):
+        for perm in ['ACCESS_FINE_LOCATION', 'ACCESS_COARSE_LOCATION', 'INTERNET', 'CALL_PHONE', 'READ_PHONE_STATE']:
+            if perm in perms and perm not in expected:
+                expected.append(perm)
+        if 'RECORD_AUDIO' in perms and 'RECORD_AUDIO' not in expected:
+            expected.append('RECORD_AUDIO')
+
+    # Food delivery apps - expect location, internet, contacts, phone
+    if {'ACCESS_FINE_LOCATION', 'INTERNET', 'READ_CONTACTS'} <= perms or (len(perms & {'ACCESS_FINE_LOCATION', 'INTERNET'}) >= 2):
+        for perm in ['ACCESS_FINE_LOCATION', 'ACCESS_COARSE_LOCATION', 'INTERNET', 'READ_CONTACTS', 'CALL_PHONE']:
+            if perm in perms and perm not in expected:
+                expected.append(perm)
+
+    # Infotainment/Audio/Streaming apps - expect bluetooth, internet, audio, location
+    if {'BLUETOOTH', 'INTERNET'} <= perms or {'RECORD_AUDIO', 'INTERNET'} <= perms:
+        for perm in ['BLUETOOTH', 'INTERNET', 'RECORD_AUDIO', 'ACCESS_COARSE_LOCATION', 'ACCESS_FINE_LOCATION', 'WAKE_LOCK']:
+            if perm in perms and perm not in expected:
+                expected.append(perm)
+        if 'READ_PHONE_STATE' in perms and 'READ_PHONE_STATE' not in expected:
+            expected.append('READ_PHONE_STATE')
+
     return expected
 
 
@@ -135,12 +166,41 @@ def build_app_intent_hint(actual_permissions: List[str], app_name: str) -> str:
     perms = set(map(str.upper, actual_permissions))
     hints: list[str] = []
 
+    # Flashlight/Torch utility
     if 'FLASHLIGHT' in perms or 'CONTROL_FLASHLIGHT' in perms:
-        hints.append('The APK requests flashlight-related permissions and may be a torch/flashlight utility.')
-    if 'CAMERA' in perms and 'FLASHLIGHT' not in perms and 'CONTROL_FLASHLIGHT' not in perms:
-        hints.append('The app requests camera access, which may indicate photo/video or flash control behavior.')
+        hints.append('Flashlight/torch utility app with LED control.')
+    
+    # Banking/Financial app
+    elif {'INTERNET', 'GET_ACCOUNTS'} <= perms or (len(perms & {'READ_SMS', 'USE_BIOMETRIC', 'GET_ACCOUNTS'}) >= 2):
+        hints.append('Banking or financial app with account access')
+        if 'USE_BIOMETRIC' in perms:
+            hints.append('and biometric authentication.')
+        if 'READ_SMS' in perms:
+            hints.append('and SMS/OTP reading capability.')
+    
+    # Taxi/Ride-sharing/Maps/Navigation app
+    elif len(perms & {'ACCESS_FINE_LOCATION', 'ACCESS_COARSE_LOCATION'}) >= 1 and 'INTERNET' in perms:
+        hints.append('Location-based app (taxi, ride-sharing, or navigation service)')
+        if 'CALL_PHONE' in perms:
+            hints.append('with calling capability for driver/passenger communication.')
+    
+    # Food delivery app
+    elif len(perms & {'ACCESS_FINE_LOCATION', 'INTERNET', 'READ_CONTACTS'}) >= 2:
+        hints.append('Food delivery app with location tracking and contact management.')
+    
+    # Infotainment/Audio/Streaming app
+    elif {'BLUETOOTH', 'INTERNET'} <= perms or {'RECORD_AUDIO', 'INTERNET'} <= perms:
+        hints.append('Infotainment or audio/streaming app')
+        if 'BLUETOOTH' in perms:
+            hints.append('with Bluetooth connectivity for wireless devices.')
+        if 'RECORD_AUDIO' in perms:
+            hints.append('with audio recording capability.')
+    
+    # Camera-based apps (photo, video, etc.)
+    elif 'CAMERA' in perms:
+        hints.append('The app requests camera access, indicating photo/video capture functionality.')
 
-    return ' '.join(hints)
+    return ' '.join(hints) if hints else 'General purpose app.'
 
 
 def run(apk_path: Path, persist_dir: Path, model: str, top_k: int, output_path: Path, skip_llm: bool) -> None:

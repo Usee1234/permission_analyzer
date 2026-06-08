@@ -42,6 +42,7 @@ def build_query_text(actual_permissions: List[str], app_name: str = '') -> str:
     return ' '.join(pieces)
 
 
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description='Query the Chroma vector index for permission and app reference data.')
     parser.add_argument('--query', default='', help='Initial text query to search reference data.')
