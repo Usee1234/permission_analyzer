@@ -69,8 +69,64 @@ def call_llm(prompt: str, model: str = 'phi3', temperature: float = 0.0, max_tok
     )
 
 
+def _repair_tiny_json(raw: str) -> Dict[str, Any]:
+    """
+    Attempt to repair common tinylama JSON mistakes:
+    - Truncated/misspelled field names (e.g. GET_ACCOCOUNTS -> GET_ACCOUNTS)
+    - Unclosed arrays/objects
+    - Extra trailing commas
+    - Missing quotes around string values
+    - Trailing garbage after final }
+    """
+    # Strategy: Try to extract any permission-like list and verdict/flagged from the text
+    result: Dict[str, Any] = {}
+    
+    # Extract expected_permissions list (anything that looks like ["PERM_A", "PERM_B", ...])
+    import re
+    perm_match = re.search(r'\[([^\]]*)\]', raw)
+    if perm_match:
+        raw_list = perm_match.group(1)
+        perms = re.findall(r'"([A-Z_]+)"', raw_list)
+        if perms:
+            result['expected_permissions'] = list(dict.fromkeys(perms))  # dedup preserving order
+    
+    # Extract verdict
+    verdict_match = re.search(r'"verdict"\s*:\s*"([^"]+)"', raw)
+    if verdict_match:
+        result['verdict'] = verdict_match.group(1)
+    
+    # Extract flagged
+    flagged_match = re.search(r'"flagged"\s*:\s*(true|false)', raw)
+    if flagged_match:
+        result['flagged'] = flagged_match.group(1).lower() == 'true'
+    
+    # Extract confidence
+    conf_match = re.search(r'"confidence"\s*:\s*([0-9.]+)', raw)
+    if conf_match:
+        result['confidence'] = float(conf_match.group(1))
+    
+    # Extract opinion
+    opinion_match = re.search(r'"opinion"\s*:\s*"([^"]+)"', raw)
+    if opinion_match:
+        result['opinion'] = opinion_match.group(1)
+    
+    return result
+
+
 def parse_json_response(text: str) -> Dict[str, Any]:
     text = text.strip()
+    
+    # Strategy 1: Try json.JSONDecoder.raw_decode - handles trailing garbage text
+    start = text.find('{')
+    if start != -1:
+        try:
+            decoder = json.JSONDecoder()
+            obj, end_pos = decoder.raw_decode(text, start)
+            return obj
+        except json.JSONDecodeError:
+            pass
+    
+    # Strategy 2: Fallback - extract text between first { and last }
     json_text = text
     if not json_text.startswith('{'):
         start = text.find('{')
@@ -79,6 +135,13 @@ def parse_json_response(text: str) -> Dict[str, Any]:
             json_text = text[start:end + 1]
     try:
         return json.loads(json_text)
-    except json.JSONDecodeError as exc:
-        raise ValueError(f'Unable to parse LLM output as JSON. Raw output:\n{text}') from exc
+    except json.JSONDecodeError:
+        pass
+    
+    # Strategy 3: Attempt to repair tiny/broken JSON using regex extraction
+    repaired = _repair_tiny_json(text)
+    if repaired:
+        return repaired
+    
+    raise ValueError(f'Unable to parse LLM output as JSON. Raw output:\n{text}')
 

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@id/dialog_holder" android:paddingTop="@dimen/activity_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <com.simplemobiletools.commons.views.MyTextInputLayout android:id="@id/add_blocked_number_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/number" android:layout_marginStart="@dimen/activity_margin" android:layout_marginEnd="@dimen/activity_margin" app:helperText="@string/add_blocked_number_helper_text" app:helperTextEnabled="true">
-        <com.google.android.material.textfield.TextInputEditText android:textSize="@dimen/bigger_text_size" android:id="@id/add_blocked_number_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="phone" android:textCursorDrawable="@null" />
-    </com.simplemobiletools.commons.views.MyTextInputLayout>
-</RelativeLayout>

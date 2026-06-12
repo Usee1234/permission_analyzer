@@ -53,34 +53,67 @@ def format_retrieval_context(permission_hits: List[Dict], app_hits: List[Dict], 
 
 
 def build_prompt(actual_permissions: List[str], app_name: str, permission_hits: List[Dict], app_hits: List[Dict], app_intent: str = '') -> str:
+    # Output the required JSON format FIRST — before context — so the tiny model
+    # processes the full schema before it runs low on attention.
+    template = (
+        '\nRequired JSON output (fill all fields, then STOP):\n'
+        '{\n'
+        '  "expected_permissions": ["PERM1", "PERM2"],\n'
+        '  "reasoning": {"SUSPICIOUS_PERM": "why this permission is unusual for this app type"},\n'
+        '  "confidence": 0.8,\n'
+        '  "verdict": "vulnerable",\n'
+        '  "flagged": true,\n'
+        '  "opinion": "In my opinion, this app is risky."\n'
+        '}'
+    )
+
     lines = [
         'You are a permission audit assistant. Return ONLY valid JSON, nothing else.',
-        'Use the retrieved context below together with the APK name and permissions to determine expected permissions, reasoning, confidence, and vulnerability.',
-        f'App: {app_name}',
-        f'Permissions: {", ".join(actual_permissions[:5])}',
+        'CRITICAL: The "reasoning" field must ONLY contain entries for permissions that are',
+        'suspicious/unexpected for this type of app. For each such permission, explain WHY',
+        'it is unusual. Do NOT include expected/safe permissions in the reasoning object.',
+        template,
+        '',
+        f'APK: {app_name}',
+        f'App Permissions: {", ".join(actual_permissions)}',
     ]
 
     if app_intent:
-        lines.append(f'App hint: {app_intent}')
+        lines.append(f'App Category Hint: {app_intent}')
 
-    lines.extend(['', format_retrieval_context(permission_hits, app_hits), '', 'Respond with this JSON structure only:'])
-    lines.extend([
-        '{',
-        '  "expected_permissions": ["PERM1", "PERM2"],',
-        '  "reasoning": {"PERM1": "brief reason"},',
-        '  "confidence": 0.8,',
-        '  "verdict": "not_vulnerable",',
-        '  "flagged": false,',
-        '  "opinion": "In my opinion, this app is safe."',
-        '}',
-    ])
+    # Shorter RAG context that fits after the JSON template
+    rag = []
+    if permission_hits:
+        rag.append('Permission Ref:')
+        for hit in permission_hits[:2]:
+            doc = (hit.get('document', '') or hit.get('metadata', {}).get('description', '')).strip().replace('\n', ' ')[:300]
+            rag.append(f'- {hit["id"]}: {doc}' if doc else f'- {hit["id"]}')
+    if app_hits:
+        rag.append('Similar App:')
+        for hit in app_hits[:1]:
+            doc = hit.get('document', '').strip().replace('\n', ' ')[:300]
+            app_title = hit.get('metadata', {}).get('app_name', '')
+            rag.append(f'- {app_title}: {doc}' if doc and app_title else f'- {app_title or hit["id"]}')
+    if rag:
+        lines.append('')
+        lines.extend(rag)
+
+    lines.extend(['', 'Remember: "reasoning" should ONLY include suspicious/unexpected permissions.',
+                  'Safe/expected permissions should NOT appear in the reasoning object.',
+                  'Output ONLY the JSON above, with all 6 fields filled. STOP after the final }.'])
 
     return '\n'.join(lines)
 
 
-def create_audit_report(app_name: str, apk_path: str, actual_permissions: List[str], expected_permissions: List[str], llm_response: Dict | None) -> Dict[str, object]:
+def create_audit_report(app_name: str, apk_path, actual_permissions: List[str], expected_permissions: List[str], llm_response: Dict | None) -> Dict[str, object]:
     canonical_actual = set(canonicalize_permissions(actual_permissions))
-    canonical_expected = set(canonicalize_permissions([perm.upper() for perm in expected_permissions]))
+    # Clip expected permissions against actual APK permissions so the LLM
+    # cannot invent permissions the APK doesn't have (e.g. WRITE_SECURE_SETTINGS
+    # for a banking app). This keeps expected_permissions honest — only
+    # permissions that the APK actually requests AND that the pipeline (via
+    # vector search / profile rules / LLM) considers expected appear here.
+    # The LLM's full verdict, reasoning, and opinion are preserved in llm_response.
+    canonical_expected = set(canonicalize_permissions([perm.upper() for perm in expected_permissions])) & canonical_actual
     unexpected = sorted(canonical_actual - canonical_expected)
     missing = sorted(canonical_expected - canonical_actual)
     vulnerable_flag = bool(unexpected)
@@ -90,13 +123,41 @@ def create_audit_report(app_name: str, apk_path: str, actual_permissions: List[s
         final_flagged = bool(llm_flagged) or (llm_verdict == 'vulnerable')
     else:
         final_flagged = vulnerable_flag or (llm_verdict == 'vulnerable')
+    # Filter LLM reasoning to only include entries for actual unexpected permissions.
+    # This prevents the LLM from reasoning about hallucinated permissions.
+    # For any unexpected permission the LLM skipped, auto-generate a default explanation.
+    llm_reasoning = {}
+    raw_reasoning = {}
+    if isinstance(llm_response, dict):
+        raw = llm_response.get('reasoning', {})
+        if isinstance(raw, dict):
+            raw_reasoning = raw
+    for perm in unexpected:
+        perm_up = canonicalize_permission_name(perm)
+        # Try exact match from LLM reasoning
+        if perm_up in raw_reasoning:
+            llm_reasoning[perm_up] = raw_reasoning[perm_up]
+            continue
+        # Try case-insensitive fallback
+        found = False
+        for k, v in raw_reasoning.items():
+            if canonicalize_permission_name(k) == perm_up:
+                llm_reasoning[perm_up] = v
+                found = True
+                break
+        if not found:
+            # Auto-generate a default reason for this unexpected permission
+            llm_reasoning[perm_up] = f"'{perm}' is not typically required by this type of app and may indicate excessive or suspicious behavior."
+
     return {
         'app_name': app_name,
         'apk_path': str(apk_path),
         'actual_permissions': sorted(actual_permissions),
-        'expected_permissions': sorted(expected_permissions),
+        'expected_permissions': sorted(canonical_expected),
+        'expected_permissions_raw_llm': sorted(expected_permissions),
         'unexpected_permissions': unexpected,
         'missing_permissions': missing,
+        'reasoning': llm_reasoning,
         'flag_excessive_permissions': vulnerable_flag,
         'llm_verdict': llm_verdict,
         'llm_flagged': llm_flagged,
@@ -200,7 +261,7 @@ def build_app_intent_hint(actual_permissions: List[str], app_name: str) -> str:
     elif 'CAMERA' in perms:
         hints.append('The app requests camera access, indicating photo/video capture functionality.')
 
-    return ' '.join(hints) if hints else 'General purpose app.'
+    return ' '.join(hints) if hints else 'Its a General purpose app but keep an eye on it and check it as it can be a malcious app with general permissions.'
 
 
 def run(apk_path: Path, persist_dir: Path, model: str, top_k: int, output_path: Path, skip_llm: bool) -> None:
@@ -214,7 +275,7 @@ def run(apk_path: Path, persist_dir: Path, model: str, top_k: int, output_path: 
     client = load_chroma_client(persist_dir)
     permission_hits = search_collection(client, 'permissions', query_text, top_k)
     app_hits = search_collection(client, 'app_examples', query_text, top_k)
-
+# this function is for giving hint to llm about app intent based on the permissions it requests so that llm can give more accurate result about expected permissions and vulnerability. It uses some basic heuristics to infer possible app categories or intents from the permissions, which can be especially helpful when the APK name is not descriptive or when permissions are ambiguous.
     app_intent = build_app_intent_hint(canonical_permissions, app_name)
     profile_permissions = infer_expected_permissions_by_profile(canonical_permissions)
     llm_response = None
@@ -228,7 +289,7 @@ def run(apk_path: Path, persist_dir: Path, model: str, top_k: int, output_path: 
         }
     else:
         prompt = build_prompt(canonical_permissions, app_name, permission_hits, app_hits, app_intent)
-        llm_output = call_llm(prompt, model=model, temperature=0.0, max_tokens=500)
+        llm_output = call_llm(prompt, model=model, temperature=0.0, max_tokens=1024)
         try:
             parsed = parse_json_response(llm_output)
             expected_permissions = parsed.get('expected_permissions', [])
